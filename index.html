@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TRABAJO INTEGRADOR</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <p >Conf Bs As</p>
+                <nav class="align-items-center">
+                    <a href="#">La conferencia</a>
+                    <a href="#">Los oradores</a>
+                    <a href="#">El lugar y la fecha</a>
+                    <a href="#">Conviertete en orador</a>
+                    <a href="#">Comprar tickets</a>
+                </nav>
+        </div>
+    </header>
+
+
+    <section id="hero">
+            <div class="bg-image d-flex justify-content-center align-items-center text-end text-white"
+                style="background-image: linear-gradient(0deg, rgba(0,0,0,0.5),  rgba(0,0,0,0.5)), url(/images/ba1.jpg); height: 90vh;">
+                <div class="col me-5">
+                    <h2>Conf Bs As</h2>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con <br> nuestra comunidad el conocimiento y experiencia de los expertos que <br> estan creando el futuro de Internet. Ven a conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer   <br> nivel que tenemos para ti. Te esperamos!</p>
+                    <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                    <button type="button" class="btn btn-success">Comprar tickets</button>
+                </div>
+            </div>
+    </section>
+
+    <section id="oradores">
+        <div class="container mt-3 text-center" >
+            <p>CONOCE A LOS <br> <span style="font-size:2em; font-weight: bold;">ORADORES</span></p>
+        </div>
+        <div class="d-flex justify-content-center gap-5">
+            <div class="card" style="width: 18rem;">
+                <img src="/images/steve.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="btn btn-warning btn-sm fw-bolder p-0">JavaScript</p>
+                    <p class="btn btn-info btn-sm fw-bolder p-0 text-white">React</p>
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod accusantium totam id nisi ut error!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/images/bill.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="btn btn-warning btn-sm fw-bolder p-0">JavaScript</p>
+                    <p class="btn btn-info btn-sm fw-bolder p-0 text-white">React</p>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod accusantium totam id nisi ut error!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/images/ada.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="btn btn-secondary btn-sm fw-bolder p-0 text-white">Negocios</p>
+                    <p class="btn btn-danger btn-sm fw-bolder p-0 text-white">Startups</p>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod accusantium totam id nisi ut error!</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="lugar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6"><img src="/images/honolulu.jpg" class="img-fluid"></div>
+                    <div class="col-6 text-white"><h2>Bs As - Octubre</h2>
+                    <p>Buenos aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la <br>mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al area <br>urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad- <br>condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                    <button type="button" class="btn btn-outline-light">Conoce mas</button></div>
+                </div>
+            </div>
+    </section>
+
+    <section id="form-orador">
+        <div class="container">
+            <p>CONVIERTETE EN UN</p>
+            <H2>ORADOR</H2>
+            <p>Anotate como orador para dar una charla ignite. Cuentanos de que quieres hablar!</p>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+            </div>
+            <div class="form-outline">
+                <textarea class="form-control" id="textarea" rows="4" placeholder="Sobre que quieres Hablar?"></textarea>
+            </div>
+            <div class="form-text">Recuerda incluir un titulo para tu charla
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="container">
+        <a href="#">Preguntas<br>frecuentes</a>
+        <a href="#">Contactanos</a>
+        <a href="#">Prensa</a>
+        <a href="#">Conferencias</a>
+        <a href="#">Terminos y<br>condiciones</a>
+        <a href="#">Privacidad</a>
+        <a href="#">estudiantes</a>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
