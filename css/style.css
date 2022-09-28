@@ -13,6 +13,8 @@ header a{
 }
 
 header a:hover{color: whitesmoke;}
+.nav-item a:hover{color: whitesmoke;}
+.nav-item a{color: rgb(154, 158, 161);}
 
 .card-body button{
     Font-size: smaller;
