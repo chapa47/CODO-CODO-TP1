@@ -14,7 +14,7 @@
         <div class="container-fluid d-flex align-items-center p-3">
             <div class="container d-flex">
                 <img src="/images/codoacodo.png" alt="logo-codo-codo" height="90" class="ps-5">
-                <p class="navbar-brand pt-3 text-white">Conf Bs As</p>
+                <p class="navbar-brand pt-3 fs-2 text-white">Conf Bs As</p>
             </div>
             <div class="container-fluid text-end me-5">
                 <nav class="d-none d-lg-block" style="font-size: 1.4rem;">
@@ -24,30 +24,20 @@
                     <a href="#" style="margin-left: 0.5em;">Conviertete en orador</a>
                     <a href="#" style="margin-left: 0.5em;"><span style="color: rgb(37,163,66);">Comprar tickets</span></a>
                 </nav>
-                <nav class="navbar navbar-expand-lg bg-light nav d-lg-none p-0">
-                    <div class="container-fluid nav justify-content-center" style="background-color: rgb(53, 58, 64);">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="collapse" id="navbarToggleExternalContent" style="background-color: rgb(53, 58, 64);">
+                    <div class="p-4">
+                    <h5><a href="#">La conferencia</a></h5>
+                    <h5><a href="#">Los oradores</a></h5>
+                    <h5><a href="#">El lugar y la fecha</a></h5>
+                    <h5><a href="#">Conviertete en orador</a></h5>
+                    <h5><a href="#"><span style="color: rgb(37,163,66);">Comprar tickets</span></a></h5>
+                </div>
+                </div>
+                <nav class="navbar navbar-dark nav d-lg-none" style="background-color: rgb(53, 58, 64);">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"  aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse nav" id="navbarText">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">La conferencia</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">El lugar y la fecha</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Conviertete en orador</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Conviertete en orador</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><span style="color: rgb(37,163,66);">Comprar tickets</span></a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </nav>
             </div>
@@ -102,47 +92,54 @@
         </div>    
     </section>
 
-    <section id="lugar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6"><img src="/images/honolulu.jpg" class="img-fluid"></div>
-                    <div class="col-6 text-white"><h2>Bs As - Octubre</h2>
-                    <p>Buenos aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la <br>mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al area <br>urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad- <br>condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-                    <button type="button" class="btn btn-outline-light">Conoce mas</button></div>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="/images/honolulu.jpg" class="img-fluid rounded-start" alt="honolulu">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Bs As - Octubre</h5>
+                    <p class="card-text">Buenos aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la <br>mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al area <br>urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad- <br>condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
-    </section>
+        </div>
+    </div>
 
     <section id="form-orador">
-        <div class="container">
-            <p>CONVIERTETE EN UN</p>
-            <H2>ORADOR</H2>
+        <div class="container text-center">
+            <p class="mb-0">CONVIERTETE EN UN</p>
+            <h2>ORADOR</h2>
             <p>Anotate como orador para dar una charla ignite. Cuentanos de que quieres hablar!</p>
         </div>
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+                        </div>
+                        <div class="form-outline mt-3">
+                            <textarea class="form-control" id="textarea" rows="4" placeholder="Sobre que quieres Hablar?"></textarea>
+                        </div>
+                        <div class="form-text pb-2">Recuerda incluir un titulo para tu charla</div>
+                    </div>
+                        <button type="submit" class="btn btn-success col-12 p-2 fs-5">Enviar</button>
+                </form>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
-            </div>
-            <div class="form-outline">
-                <textarea class="form-control" id="textarea" rows="4" placeholder="Sobre que quieres Hablar?"></textarea>
-            </div>
-            <div class="form-text">Recuerda incluir un titulo para tu charla
-            </div>
-            <button type="submit" class="btn btn-success">Enviar</button>
-        </form>
     </section>
 
-    <footer class="container">
+    <footer class="container-fluid mt-3 p-4 d-flex justify-content-center align-items-center d-grid gap-5 fs-5">
         <a href="#">Preguntas<br>frecuentes</a>
         <a href="#">Contactanos</a>
         <a href="#">Prensa</a>
         <a href="#">Conferencias</a>
         <a href="#">Terminos y<br>condiciones</a>
         <a href="#">Privacidad</a>
-        <a href="#">estudiantes</a>
+        <a href="#">Estudiantes</a>
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
