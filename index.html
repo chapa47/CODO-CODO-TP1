@@ -11,36 +11,35 @@
 <body>
 
     <header>
-        <div class="container-fluid d-flex align-items-center p-3">
-            <div class="container d-flex">
-                <img src="/images/codoacodo.png" alt="logo-codo-codo" height="90" class="ps-5">
-                <p class="navbar-brand pt-3 fs-2 text-white">Conf Bs As</p>
-            </div>
-            <div class="container-fluid text-end me-5">
-                <nav class="d-none d-lg-block" style="font-size: 1.4rem;">
-                    <a href="#">La conferencia</a>
-                    <a href="#" style="margin-left: 0.5em;">Los oradores</a>
-                    <a href="#" style="margin-left: 0.5em;">El lugar y la fecha</a>
-                    <a href="#" style="margin-left: 0.5em;">Conviertete en orador</a>
-                    <a href="#" style="margin-left: 0.5em;"><span style="color: rgb(37,163,66);">Comprar tickets</span></a>
-                </nav>
-                <div class="collapse" id="navbarToggleExternalContent" style="background-color: rgb(53, 58, 64);">
-                    <div class="p-4">
-                    <h5><a href="#">La conferencia</a></h5>
-                    <h5><a href="#">Los oradores</a></h5>
-                    <h5><a href="#">El lugar y la fecha</a></h5>
-                    <h5><a href="#">Conviertete en orador</a></h5>
-                    <h5><a href="#"><span style="color: rgb(37,163,66);">Comprar tickets</span></a></h5>
-                </div>
-                </div>
-                <nav class="navbar navbar-dark nav d-lg-none" style="background-color: rgb(53, 58, 64);">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"  aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+        <div class="container-fluid py-4 px-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+                <div class="container-fluid" style="background-color: rgb(53, 58, 64);">
+                    <img src="/images/codoacodo.png" alt="logo-codo-codo" height="90">
+                    <a class="navbar-brand fs-3" style="color: white;" href="#">Conf Bs As</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 fs-5 ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: rgb(154, 150, 157);" href="#">La conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: rgb(154, 150, 157);" href="#">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: rgb(154, 150, 157);" href="#">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: rgb(154, 150, 157);" href="#">Conviertete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span style="color: rgb(37,163,66); ">Comprar      tickets</span></a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -48,8 +47,8 @@
     <section id="hero">
             <div class="bg-image d-flex justify-content-center align-items-center text-end text-white"
                 style="background-image: linear-gradient(0deg, rgba(0,0,0,0.5),  rgba(0,0,0,0.5)), url(/images/ba1.jpg); height: 90vh;">
-                <div class="col me-5">
-                    <h2>Conf Bs As</h2>
+                <div class="col me-5 fs-4">
+                    <h1>Conf Bs As</h1>
                     <p>Bs As llega por primera vez a Argentina. Un evento para compartir con <br> nuestra comunidad el conocimiento y experiencia de los expertos que <br> estan creando el futuro de Internet. Ven a conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer   <br> nivel que tenemos para ti. Te esperamos!</p>
                     <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
                     <button type="button" class="btn btn-success">Comprar tickets</button>
@@ -61,32 +60,34 @@
         <div class="container mt-3 text-center" >
             <p>CONOCE A LOS <br> <span style="font-size:2em; font-weight: bold;">ORADORES</span></p>
         </div>
-        <div class="d-flex justify-content-center gap-5">
-            <div class="card" style="width: 18rem;">
-                <img src="/images/steve.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="btn btn-warning btn-sm fw-bolder p-0">JavaScript</p>
-                    <p class="btn btn-info btn-sm fw-bolder p-0 text-white">React</p>
-                    <h5 class="card-title">Steve Jobs</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod accusantium totam id nisi ut error!</p>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center gap-5">
+                <div class="card p-0" style="width: 18rem;">
+                    <img src="/images/steve.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="btn btn-warning btn-sm fw-bolder p-0">JavaScript</p>
+                        <p class="btn btn-info btn-sm fw-bolder p-0 text-white">React</p>
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus  repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod   accusantium totam id nisi ut error!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="/images/bill.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="btn btn-warning btn-sm fw-bolder p-0">JavaScript</p>
-                    <p class="btn btn-info btn-sm fw-bolder p-0 text-white">React</p>
-                    <h5 class="card-title">Bill Gates</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod accusantium totam id nisi ut error!</p>
+                <div class="card p-0" style="width: 18rem;">
+                    <img src="/images/bill.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="btn btn-warning btn-sm fw-bolder p-0">JavaScript</p>
+                        <p class="btn btn-info btn-sm fw-bolder p-0 text-white">React</p>
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus  repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod   accusantium totam id nisi ut error!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="/images/ada.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="btn btn-secondary btn-sm fw-bolder p-0 text-white">Negocios</p>
-                    <p class="btn btn-danger btn-sm fw-bolder p-0 text-white">Startups</p>
-                    <h5 class="card-title">Ada Lovelace</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod accusantium totam id nisi ut error!</p>
+                <div class="card p-0" style="width: 18rem;">
+                    <img src="/images/ada.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="btn btn-secondary btn-sm fw-bolder p-0 text-white">Negocios</p>
+                        <p class="btn btn-danger btn-sm fw-bolder p-0 text-white">Startups</p>
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex temporibus  repudiandae blanditiis placeat? Neque sint minus sequi non reiciendis repellat, voluptates soluta quod   accusantium totam id nisi ut error!</p>
+                    </div>
                 </div>
             </div>
         </div>    
@@ -127,19 +128,21 @@
                         </div>
                         <div class="form-text pb-2">Recuerda incluir un titulo para tu charla</div>
                     </div>
-                        <button type="submit" class="btn btn-success col-12 p-2 fs-5">Enviar</button>
+                        <button type="submit" class="btn btn-success col-12 p-2 fs-5 mb-3">Enviar</button>
                 </form>
             </div>
     </section>
 
-    <footer class="container-fluid mt-3 p-4 d-flex justify-content-center align-items-center d-grid gap-5 fs-5">
-        <a href="#">Preguntas<br>frecuentes</a>
-        <a href="#">Contactanos</a>
-        <a href="#">Prensa</a>
-        <a href="#">Conferencias</a>
-        <a href="#">Terminos y<br>condiciones</a>
-        <a href="#">Privacidad</a>
-        <a href="#">Estudiantes</a>
+    <footer class="footer-nav nav justify-content-center gap-5 py-3">
+        
+            <a href="#">Preguntas<br>frecuentes</a>
+            <a href="#">Contactanos</a>
+            <a href="#">Prensa</a>
+            <a href="#">Conferencias</a>
+            <a href="#">Terminos y<br>condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Estudiantes</a>
+        
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
