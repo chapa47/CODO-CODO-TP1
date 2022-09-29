@@ -2,8 +2,6 @@ header{
     background-color: rgb(53, 58, 64);
 }
 
-.nav-item a:hover{color: white;}
-
 .card-body button{
     Font-size: smaller;
 }
@@ -17,3 +15,9 @@ footer a{color: whitesmoke;
 }
 
 footer a:hover{color: whitesmoke;}
+
+ul.navbar-nav > li > a {color:rgb(158, 153, 157);}
+
+ul.navbar-nav > li > a:hover {
+    color:whitesmoke;
+}
