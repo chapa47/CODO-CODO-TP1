@@ -10,7 +10,7 @@ function porcentaje(){
 
     if(tipo.selectedIndex == "0"){
         operacion = entrada * cantidad;
-        resultado = operacion - (operacion * 0.15);
+        resultado = operacion - (operacion * 0.80);
         total1.innerHTML = "Total a Pagar: $" + resultado;
     }
     else if(tipo.selectedIndex == "1"){
@@ -20,7 +20,7 @@ function porcentaje(){
     }
     else if(tipo.selectedIndex == "2"){
         operacion = entrada * cantidad;
-        resultado = operacion - (operacion * 0.80);
+        resultado = operacion - (operacion * 0.15);
         total1.innerHTML = "Total a Pagar: $" + resultado;
     }
 }
